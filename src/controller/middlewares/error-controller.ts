@@ -1,10 +1,15 @@
-import { Request, Response } from 'express'
+import { NextFunction, Request, Response } from 'express'
 import { StatusCodes } from 'http-status-codes'
 
 import { logger } from '../../logger'
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-export async function errorController(error: Error & { status?: number }, _request: Request, res: Response) {
+export async function errorController(
+  error: Error & { status?: number },
+  _request: Request,
+  res: Response,
+  _next: NextFunction,
+) {
   logger.error(error)
 
   return res
