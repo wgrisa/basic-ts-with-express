@@ -18,3 +18,5 @@ node_modules
 !.editorconfig
 !.gitignore
 !.prettierrc
+!.eslintrc.json
+!.eslintignore
