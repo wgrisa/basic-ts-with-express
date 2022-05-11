@@ -6,6 +6,7 @@
   "private": "true",
   "scripts": {
     "start": "ts-node src/index.ts",
+    "dev": "ts-node-dev --poll --no-notify src/server.ts",
     "test": "jest --colors --detectOpenHandles --testMatch **/src/**/*.test.ts",
     "test-watch": "yarn test -- --watchAll --no-stack",
     "lint": "eslint . --ext .ts",

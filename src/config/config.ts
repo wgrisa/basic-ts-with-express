@@ -15,4 +15,4 @@ const defaultConfig = {
   nodeClusterEnabled: false,
 }
 
-export const config: Partial<typeof defaultConfig> = rc('basic_ts_with_express', defaultConfig)
+export const config: typeof defaultConfig = rc('basic_ts_with_express', defaultConfig)

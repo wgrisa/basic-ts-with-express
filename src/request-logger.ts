@@ -67,7 +67,7 @@ const formatSensitiveData = (originalUrl: string, data: any) => {
   if (isSensitiveData) {
     return data
       ? JSON.stringify({ warning: 'THIS IS A SENSITIVE ROUTE. THE DATA HAS BEEN FILTERED!', keys: Object.keys(data) })
-      : null
+      : undefined
   }
 
   return JSON.stringify(data)
