@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "Node 16",
+
+  "compilerOptions": {
+    "lib": ["es2020"],
+    "module": "commonjs",
+    "target": "es2020",
+
+    "noImplicitAny": false,
+    "sourceMap": true,
+    "experimentalDecorators": true,
+    "esModuleInterop": true,
+    "declaration": true,
+    "strict": true,
+
+    "outDir": "build"
+  },
+  "exclude": ["node_modules", "build"]
+}
